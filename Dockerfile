@@ -33,7 +33,7 @@ RUN mkdir build && \
 
 RUN pip install --upgrade pip
 
-### This block is testing if (1) python-pdal can be installed and finds the PDAL bindings
+### This block is testing if (1) python-pdal can be installed and (2) finds the PDAL bindings
 WORKDIR /workspace
 RUN python -m venv venv/ && \
     /bin/bash -c "source venv/bin/activate && pip install PDAL"
